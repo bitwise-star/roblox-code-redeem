@@ -1,0 +1,10 @@
+[package]
+name = "franydev/profilestore"
+description = "Periodic DataStore saving solution with session locking"
+version = "1.0.2"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+include = ["src", "default.project.json", "LICENSE"]
+
+[dependencies]

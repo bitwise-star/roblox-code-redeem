@@ -1,0 +1,11 @@
+[package]
+name = "star/script-tests"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+
+[server-dependencies]
+cmdr = "evaera/cmdr@1.12.0"
+profilestore = "franydev/profilestore@1.0.2"
