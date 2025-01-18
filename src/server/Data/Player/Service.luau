@@ -1,7 +1,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerScriptService = game:GetService("ServerScriptService")
 
-local Leaderstats = require(ServerScriptService.Server.Data.PlayerData.Leaderstats)
+local Leaderstats = require(ServerScriptService.Server.Data.Player.Leaderstats)
 local CodesConfig = require(ReplicatedStorage.Shared.Config.Codes)
 
 type TSetByParam = "Cash" | "Gems"
@@ -29,7 +29,7 @@ function Service.RedeemCode(player: Player, code: string)
         if not CodeRewards then return false, "Code doesn't exists!" end
 
         table.insert(profile.Data.RedeemedCodes, code)
-        Service.SetBy(player, "Cash", CodeRewards.Money)
+        Service.SetBy(player, "Cash", CodeRewards.Cash)
         Service.SetBy(player, "Gems", CodeRewards.Gems)
 
         return true

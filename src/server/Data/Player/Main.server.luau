@@ -4,8 +4,8 @@ local ServerScriptService = game:GetService("ServerScriptService")
 local RunService = game:GetService("RunService")
 
 local ProfileStore = require(ServerScriptService.Server.Libs.profilestore)
-local Service = require(ServerScriptService.Server.Data.PlayerData.Service)
-local Leaderstats = require(ServerScriptService.Server.Data.PlayerData.Leaderstats)
+local Service = require(ServerScriptService.Server.Data.Player.Service)
+local Leaderstats = require(ServerScriptService.Server.Data.Player.Leaderstats)
 local Template = require(ReplicatedStorage.Shared.Data.Templates.Player)
 
 local PlayerStore = ProfileStore.New("PlayerStore", Template)

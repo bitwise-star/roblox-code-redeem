@@ -1,6 +1,6 @@
 local ServerScriptService = game:GetService("ServerScriptService")
 
-local PlayerService = require(ServerScriptService.Server.Data.PlayerData.Service)
+local PlayerService = require(ServerScriptService.Server.Data.Player.Service)
 
 return function(context, code: string)
     local success, error = PlayerService.RedeemCode(context.Executor, code)
